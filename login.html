@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddaHub - Log In or Sign Up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 980px;
+            width: 100%;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        /* Left Side: Branding */
+        .login-left {
+            flex: 1;
+            padding-bottom: 90px;
+        }
+
+        .login-left h1 {
+            color: #0866ff;
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .login-left p {
+            font-size: 28px;
+            line-height: 32px;
+            color: #1c1e21;
+        }
+
+        /* Right Side: Form Card */
+        .login-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 396px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .login-card input {
+            width: 100%;
+            padding: 14px 16px;
+            font-size: 17px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .login-card input:focus {
+            border-color: #0866ff;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+
+        .login-btn {
+            background-color: #0866ff;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .login-btn:hover {
+            background-color: #1877f2;
+        }
+
+        .forgot-pass {
+            text-align: center;
+            color: #0866ff;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 6px 0;
+        }
+
+        .forgot-pass:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dadde1;
+            margin: 6px 0;
+        }
+
+        .create-btn {
+            background-color: #42b72a;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            align-self: center;
+            margin-top: 6px;
+            transition: background-color 0.2s;
+        }
+
+        .create-btn:hover {
+            background-color: #36a420;
+        }
+
+        /* Responsive Design for Mobiles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+                padding: 10px;
+            }
+
+            .login-left {
+                padding-bottom: 0;
+            }
+
+            .login-left h1 {
+                font-size: 3rem;
+            }
+
+            .login-left p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="login-left">
+            <h1>AddaHub</h1>
+            <p>Connect with friends and the world around you on AddaHub.</p>
+        </div>
+
+        <!-- Right Section (Form) -->
+        <div class="login-right">
+            <div class="login-card">
+                <input type="text" placeholder="Email address or phone number">
+                <input type="password" placeholder="Password">
+                <button class="login-btn">Log In</button>
+                <a href="#" class="forgot-pass">Forgotten password?</a>
+                <hr>
+                <button class="create-btn">Create new account</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
